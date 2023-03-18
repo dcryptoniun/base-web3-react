@@ -13,7 +13,7 @@ import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { polygonMumbai } from "wagmi/chains";
 
 const chains = [polygonMumbai];
-const projectId = "f4d2984143cf717cb0228a57db55a520";
+const projectId = "projectId";
 
 const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
 const wagmiClient = createClient({
@@ -37,7 +37,7 @@ root.render(
         "--w3m-background-color": "#00ffcc",
         "--w3m-accent-fill-color": "#ffff",
       }}
-      projectId={"f4d2984143cf717cb0228a57db55a520"}
+      projectId={"projectId"}
       ethereumClient={ethereumClient}
     />
   </React.StrictMode>
