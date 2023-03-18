@@ -2,10 +2,11 @@ import React from "react";
 
 // import confi from "./config/Config.json";
 // import Abi from "./config/Abi.json";
- import { useAccount/*,{useContractRead }*/ } from "wagmi";
+import { useAccount /*,{useContractRead }*/ } from "wagmi";
 
 function Home() {
   const { address, isConnected } = useAccount();
+
   // const contractAddress = confi.CONTRACT_ADDRESS;
 
   // const { data: minted } = useContractRead({
@@ -42,7 +43,7 @@ function Home() {
       <div>
         <div>
           <h1>home</h1>
-          <p>Web3 Starter code</p>
+          <p>Web3 Starter code </p>
           {isConnected && (
             <div>
               {" "}
